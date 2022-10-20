@@ -7,31 +7,36 @@
 	<title>Mi Portafolio</title>
 	<!-- LINK -->
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&display=swap" rel="stylesheet">
 	<!-- SCRIPT -->
 	<script src="https://kit.fontawesome.com/99f28131b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
 	<!-- CABECERA -->
 	<header>
 		<div class="nav">
 			<nav>
 				<ul>
-					<li><a href="#presentation">Inicio</a></li>
+					<li><a href="#presentation" class="elements-nav">Inicio</a></li>
 				</ul>
 				<ul>
-					<li><a href="#me">Sobre Mi</a></li>
+					<li><a href="#me" class="elements-nav">Sobre Mi</a></li>
 				</ul>
 				<ul>
-					<li><a href="#learnings">Conocimientos</a></li>
+					<li><a href="#learnings" class="elements-nav">Conocimientos</a></li>
 				</ul>
 				<ul>
-					<li><a href="#projects">Proyectos</a></li>
+					<li><a href="#projects" class="elements-nav">Proyectos</a></li>
 				</ul>
 
 				<ul>
-					<li><a href="#contact">Contacto</a></li>
+					<li><a href="#contact" class="elements-nav">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -50,15 +55,15 @@
 			</div>
 			<!-- PRESENTACION -->
 			<div class="presentation" id="me">
-				<article>
-					<h1>Sobre Mi</h1>
+				<article data-aos="fade-up">
+					<h1 data-aos="fade-down-right">Sobre Mi</h1>
 					<img src="Imagenes/imagen-presentacion.png" class="img-presentation">
 					<p>Hola, mi nombre es Francisco Agudelo, soy de Bogotá-Colombia. Soy un programador enfocado en la rama del desarrollo web, Continuamente aprendiendo y adquiriendo nuevas habilidades en función a las actuales y futuras demandas y tendencias tecnológicas en el campo del desarrollo, Con conocimientos varios de Front-end y Back-end y Apasionado con el trabajo que realizo</p>
 				</article>
 			</div>
 			<hr>
 			<!-- APRENDIZAJES -->
-			<div class="learnings" id="learnings">
+			<div class="learnings" id="learnings" data-aos="zoom-in">
 				<h1>Conocimientos</h1>
 				<h2 class="frontend"><i class="fa-solid fa-code icons-title"></i>Front-End</h2>
 				<ul>
@@ -83,7 +88,7 @@
 				</ul>
 			</div>
 			<!-- PROYECTOS -->
-			<div class="projects" id="projects">
+			<div class="projects" id="projects" data-aos="fade-left">
 				<h1>Portafolio</h1>
 				<div class="portafolio">
 					<img src="Imagenes/left.png" class="control prev">
@@ -99,7 +104,7 @@
 				</div>
 			</div>
 			<!-- CONTACTO -->
-			<div class="contact" id="contact">
+			<div class="contact" id="contact" data-aos="fade-down-right">
 				<h1>Contactos</h1>
 				<div class="map">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39280654388!2d-74.24789651131734!3d4.648625943632482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1666131517810!5m2!1ses!2sco" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
